@@ -26,4 +26,19 @@
                 Me.selectMood(0)
         End Select
     End Sub
+
+
+    Public Sub emptyMood()
+
+
+        If Not IsNothing(pbEmotion.Image) Then
+            pbEmotion.Image.Dispose()
+            pbEmotion.Image = Nothing
+        End If
+
+
+
+    End Sub
+
+
 End Class

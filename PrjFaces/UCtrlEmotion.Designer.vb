@@ -22,11 +22,10 @@ Partial Class UCtrlEmotion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UCtrlEmotion))
         Me.pbEmotion = New System.Windows.Forms.PictureBox()
-        Me.imgLoend = New System.Windows.Forms.ImageList(Me.components)
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.imgLoend = New System.Windows.Forms.ImageList()
+        Me.ImageList1 = New System.Windows.Forms.ImageList()
         CType(Me.pbEmotion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,7 +60,7 @@ Partial Class UCtrlEmotion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pbEmotion)
         Me.Name = "UCtrlEmotion"
-        Me.Size = New System.Drawing.Size(800, 450)
+        Me.Size = New System.Drawing.Size(81, 63)
         CType(Me.pbEmotion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
