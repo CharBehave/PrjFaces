@@ -26,6 +26,7 @@ Partial Class UCtrlEmotion
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UCtrlEmotion))
         Me.pbEmotion = New System.Windows.Forms.PictureBox()
         Me.imgLoend = New System.Windows.Forms.ImageList(Me.components)
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.pbEmotion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,6 +49,12 @@ Partial Class UCtrlEmotion
         Me.imgLoend.Images.SetKeyName(4, "teeth.png")
         Me.imgLoend.Images.SetKeyName(5, "yell.png")
         '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        '
         'UCtrlEmotion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -62,4 +69,5 @@ Partial Class UCtrlEmotion
 
     Friend WithEvents pbEmotion As PictureBox
     Friend WithEvents imgLoend As ImageList
+    Friend WithEvents ImageList1 As ImageList
 End Class
